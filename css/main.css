@@ -9,10 +9,13 @@ html {
 body {
   background-color: #c9b5ab;
   display: block;
+  line-height: 1.5;
+  font-family: "PT Serif", serif;
 }
 
 h1, h2 {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
+  color: #3f1622;
 }
 
 h1 {
@@ -24,7 +27,9 @@ nav {
 }
 
 nav ol {
-  font-size: 0.8rem;
+  font-size: .8rem;
+  list-style-type: none;
+  font-family: "PT Sans", sans-serif;
 }
 
 ol {
@@ -35,17 +40,24 @@ li {
   display: list-item;
 }
 
-ol + li + a {
+a {
   color: #8f2440;
   font-size: 1.125rem;
+  text-decoration: none;
 }
 
-  figure {
+a:hover {
+  text-decoration: underline;
+  color: #3f1622;
+}
+
+figure {
   display: block;
 }
 
 header {
   display: block;
+  margin-bottom: 1.2rem;
 }
 
 img {
@@ -55,14 +67,14 @@ img {
 figcaption {
   text-align: center;
   display: block;
+  font-style: italic;
 }
 
 div {
   display: block;
 }
 
-.datetime + #P55D + #P65D {
-  display: block;
+main figure + p {
   font-size: 1.125rem;
   font-weight: bold;
 }
@@ -72,8 +84,12 @@ blockquote {
   font-style: italic;
 }
 
-h1 + ol + li {
-  list-style-type: lower-alpha;
+strong {
+  font-weight: normal;
+}
+
+.common {
+  list-style-type: lower-greek;
 }
 
 dl + dt {
@@ -84,7 +100,7 @@ dl + dt {
   font-style: italic;
 }
 
-  aside + ul {
+aside ul {
   list-style-type: circle;
 }
 
